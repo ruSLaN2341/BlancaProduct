@@ -1,0 +1,96 @@
+.form{
+  width: 100vw;
+  margin-bottom: 100px;
+  .container{
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+  }
+  &__inputs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    &-submit{
+      @include text($familyGilroy,normal,700,16px,19px,$color01);
+      display: flex;
+      padding: 21px 78px;
+      background: #F8981D;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__nameInput,&__phoneInput,&__addressInput,&__stateSelect,&__countrySelect,&__zipInput{
+    cursor: pointer;
+    outline: none;
+    width: 610px;
+    height: 55px;
+    border: none;
+    padding: 18px 10px 18px 30px ;
+    background: #F3F3F3;
+    border-radius: 5px;
+    @include text($familyGilroy,normal,400,16px,19px,#999999);
+
+  }
+  &__emailInput,&__cardSelect,&__cardnumberInput,&__cvv2Input,&__dateInput{
+    display: flex;
+    @include text($familyGilroy,normal,400,16px,19px,#999999);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #F3F3F3;
+    border-radius: 5px;
+    padding: 18px 5px 18px 30px;
+  }
+  &__emailInput{
+    width: 296px;
+    height: 55px;
+
+  }
+  &__cardSelect{
+    appearance: none;
+    width: 185px;
+    height: 55px;
+  }
+  &__cardnumberInput{
+    width: 269px;
+    height: 55px;
+  }
+  &__cvv2Input{
+    width: 126px;
+    height: 55px;
+  }
+  &__dateInput{
+    width: 284px;
+    height: 55px;
+  }
+  &__countrySelect,&__stateSelect{
+    appearance: none;
+  }
+  &__ckeckboxInput{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    @include text($familyGilroy,normal,400,14px,16px,#999999);
+    a{
+      color: rgba(11, 122, 106, 1);
+      text-decoration: underline rgba(11, 122, 106, 1);
+    }
+  }
+  &__checkbox{
+    width: 23px;
+    height: 23px;
+    border: black;
+    outline: none;
+    background: #E4E4E4;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}

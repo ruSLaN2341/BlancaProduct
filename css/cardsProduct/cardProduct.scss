@@ -1,0 +1,172 @@
+.cardProduct{
+  width: 100vw;
+  margin-top: 63px;
+  .container{
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    column-gap: 20px;
+  }
+  &__productInfo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    &-txt{
+      margin-top: 14px;
+      text-align: center;
+      display: flex;
+      padding: 15px 362px;
+      @include text($familyGilroy,normal,500,16px,19px,#282828);
+    }
+    &__text{
+      display: flex;
+      column-gap: 42px;
+      margin-bottom: 32px;
+    }
+    &__textBlock1{
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      &-title{
+        @include text($familyGilroy,normal,600,20px,24px,#282828);
+      }
+      &-subtitle{
+        @include text($familyGilroy,normal,500,16px,19px,#282828);
+      }
+      &-text{
+        @include text($familyGilroy,normal,400,16px,19px,#999999);
+        width: 423px;
+        height: 76px;
+      }
+    }
+    &__textBlock2{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      &-title{
+        @include text($familyGilroy,normal,600,20px,24px,#282828);
+      }
+      &-text{
+        @include text($familyGilroy,normal,400,16px,19px,#999999);
+        width: 423px;
+        height: 209px;
+      }
+    }
+    &__video{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 907px;
+      height: 271px;
+      background: #282828;
+      border-radius: 5px;
+      &-redBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 49px;
+        background: red;
+        border-radius: 5px;
+      }
+    }
+  }
+  &__aboutBlock{
+    display: flex;
+    column-gap: 45px;
+    &-img{
+      width: 392px;
+      height: 371px;
+      background: #F6F6F6;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__priceBlock{
+      display: flex;
+      flex-direction: column;
+      &-title{
+        @include text($familyGCMC,normal,400,32px,32px,#443E3E);
+        margin-bottom: 24px;
+      }
+      &-subtitle{
+        @include text($familyGilroy,normal,400,16px,19px,#282828);
+        margin-bottom: 48px;
+      }
+      &-list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-bottom: 48px;
+      }
+      &-li{
+        @include text($familyGilroy,normal,400,16px,19px,#282828);
+        list-style-image: url("../img/cardsProduct/check-square.png");
+        list-style-position: inside;
+      }
+      &-box{
+        display: flex;
+        column-gap: 63px;
+        align-items: center;
+      }
+      &-price{
+        @include text($familyGilroy,normal,700,32px,39px,#0B7A6A);
+      }
+      &-btn{
+        display: flex;
+        padding: 20px 56px;
+        background: #F8981D;
+        border-radius: 5px;
+        cursor: pointer;
+        @include text($familyGilroy,normal,700,16px,19px,$color01);
+        transition: all 0.5s ease-in-out;
+        &:hover{
+          transition: all 0.5s ease-in-out;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  &__aboutPortions{
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+  }
+  &__insideAboutPortions{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 10px;
+    &-title{
+      @include text($familyGilroy,normal,400,14px,16px,#282828);
+      margin-bottom: 10px;
+    }
+    &-subtitle{
+      margin-bottom: 10px;
+      @include text($familyGilroy,normal,400,14px,16px,#999999);
+    }
+    &-table{
+      display: flex;
+      flex-direction: column;
+      margin-top: 23px;
+      margin-bottom: 10px;
+      tr{
+        display: flex;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+      }
+      th:first-child{
+        @include text($familyGilroy,normal,400,14px,16px,#999999);
+        padding:10px 65px 10px 0;
+      }
+      th:last-child{
+        @include text($familyGilroy,normal,400,14px,16px,#999999);
+        padding:10px 0 10px 0;
+      }
+    }
+    &-text{
+      width: 248px;
+      height: 336px;
+      @include text($familyGilroy,normal,400,12px,14px,#282828);
+    }
+  }
+}

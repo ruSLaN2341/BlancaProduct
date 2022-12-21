@@ -1,0 +1,68 @@
+.footer{
+
+  width: 100vw;
+  background: #082622;
+  .container{
+    max-width: 1220px;
+    height: 260px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__upBlock{
+    margin-top: 38px;
+    margin-bottom: 35px;
+    display: flex;
+    column-gap: 130px;
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    column-gap: 66px;
+    &-txt{
+      @include text($familyGilroy,normal,400,14px,16px,$color01);
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+    &-verticalLine{
+      width: 25px;
+      height: 0;
+      border: 1px solid #223431;
+      transform: rotate(90deg);
+    }
+  }
+  &__horizontalLine{
+    border: 1px solid #223431;
+    margin-bottom: 35px;
+  }
+  &__bottomBlock{
+    display: flex;
+    column-gap: 371px;
+    align-items: center;
+    &-tel{
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      padding: 13px 19px;
+      border: 1px solid #456863;
+      border-radius: 5px;
+      @include text($familyGilroy,normal,500,20px,24px,$color01);
+    }
+    &-txt{
+      @include text($familyGilroy,normal,400,16px,19px,#456863);
+    }
+    &__pay{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      &-cads{
+        display: flex;
+        column-gap: 7px;
+      }
+      &-txt{
+        @include text($familyGilroy,normal,400,14px,16px,$color01);
+      }
+    }
+  }
+}

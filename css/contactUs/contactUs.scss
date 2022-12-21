@@ -1,0 +1,111 @@
+.contactUs{
+  width: 100vw;
+  margin-top: 101px;
+  margin-bottom: 100px;
+  .container{
+    max-width: 1215px;
+    margin: auto;
+    display: flex;
+    column-gap: 18px;
+  }
+  &__contact{
+    display: flex;
+    flex-direction: column;
+    &-title{
+      @include text($familyGCMC,normal,400,32px,32px,#443E3E);
+      margin-bottom: 35px;
+    }
+    &-email{
+      display: flex;
+      column-gap: 63px;
+      align-items: center;
+      @include text($familyGilroy,normal,500,16px,19px,$color00);
+      a{
+        @include text($familyGilroy,normal,600,24px,29px,#0B7A6A);
+      }
+      margin-bottom: 25px;
+    }
+    &-line{
+      width: 700px;
+      height: 0px;
+      border: 1px solid #E4E4E4;
+      margin-bottom: 25px;
+    }
+    &-text{
+      @include text($familyGilroy,normal,500,16px,19px,#999999);
+      margin-bottom: 20px;
+    }
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      margin-bottom: 25px;
+      li{
+        list-style-position: inside;
+        @include text($familyGilroy,normal,400,16px,19px,#282828);
+        list-style-image: url("../img/cardsProduct/check-square.png");
+
+      }
+    }
+    &-form{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    &-inputName{
+      width: 310px;
+      height: 47px;
+      background: #F3F3F3;
+      border-radius: 5px;
+      border: none;
+      padding: 14px 10px 14px 30px;
+      outline: none;
+    }
+    &-inputEmail{
+      width: 310px;
+      height: 47px;
+      background: #F3F3F3;
+      border-radius: 5px;
+      border: none;
+      padding: 14px 10px 14px 30px;
+
+      outline: none;
+    }
+    &-btnSubmit{
+      width: 185px;
+      height: 60px;
+      padding: 21px 57px;
+      background: #F8981D;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.05);
+      }
+      @include text($familyGilroy,normal,700,16px,19px,$color01);
+
+    }
+  }
+  &__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 496px;
+    height: 510px;
+    background: #0B7A6A;
+    border-radius: 5px;
+    &-inside{
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+    }
+    &-title{
+      @include text($familyGCMC,normal,400,56px,56px,$color01);
+    }
+    &-text{
+      @include text($familyGilroy,normal,400,44px,51px,#20B49E);
+    }
+  }
+
+}

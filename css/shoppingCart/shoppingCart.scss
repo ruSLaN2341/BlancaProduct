@@ -1,0 +1,89 @@
+.shoppingCart{
+  width: 100vw;
+  margin-bottom: 100px;
+  .container{
+    max-width:1215px;
+    height: 99px;
+    margin: auto;
+    display: flex;
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 204px;
+  }
+  &__title{
+    @include text($familyGilroy,normal,600,20px,24px,#282828);
+    margin-bottom: 15px;
+  }
+  &__radioBox{
+    display: flex;
+    column-gap: 7px;
+    input{
+      display: none;
+    }
+    label{
+      cursor: pointer;
+      @include text($familyGilroy,normal,400,20px,23px,#999999);
+      border-radius: 5px;
+      display: flex;
+      padding: 18px 21px;
+      transition: all 0.5s ease-in-out;
+      &:hover{
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+    input:checked+label{
+      color: white;
+      background: #0B7A6A;
+      line-height: 24px;
+    }
+  }
+  &__sum{
+    @include text($familyGilroy,normal,500,20px,24px,#999999);
+    span{
+      @include text($familyGilroy,normal,600,20px,24px,#282828);
+      margin-bottom: 15px;
+    }
+  }
+  &__submitBox{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+  }
+  &__ckeckboxInput{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    @include text($familyGilroy,normal,400,14px,16px,#999999);
+    a{
+      color: rgba(11, 122, 106, 1);
+      text-decoration: underline rgba(11, 122, 106, 1);
+    }
+  }
+  &__checkbox{
+    width: 23px;
+    height: 23px;
+    border: black;
+    outline: none;
+    background: #E4E4E4;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  &__submit{
+    @include text($familyGilroy,normal,700,16px,19px,$color01);
+    display: flex;
+    padding: 21px 56px;
+    background: #F8981D;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+      transition: all 0.5s ease-in-out;
+      transform: scale(1.05);
+    }
+  }
+}

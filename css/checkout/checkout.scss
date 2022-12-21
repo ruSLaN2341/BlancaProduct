@@ -1,0 +1,123 @@
+.checkout{
+  width: 100vw;
+  margin-top: 101px;
+  margin-bottom: 50px;
+  .container{
+    max-width: 1230px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  &__title{
+    @include text($familyGCMC,normal,400,32px,32px,#443E3E);
+
+  }
+  &__table{
+    &-title{
+      tr{
+        display: flex;
+        th{
+          display: flex;
+          @include text($familyGilroy,normal,500,16px,19px,#999999);
+        }
+        th:nth-child(1){
+          width: 500px;
+        }
+        th:nth-child(2){
+          width: 236px;
+
+        }
+        th:nth-child(3){
+          width: 305px;
+
+        }
+        th:nth-child(4){
+          width: 102px;
+        }
+      }
+    }
+   &-productRow{
+     display: flex;
+     align-items: center;
+     width: 1220px;
+     border-top:1px solid #E4E4E4;
+     border-bottom:1px solid #E4E4E4;
+     th{
+       display: flex;
+     }
+     th:nth-child(1){
+       width: 500px;
+     }
+     th:nth-child(2){
+       width: 236px;
+       @include text($familyGilroy,normal,500,20px,24px,$color00);
+     }
+     th:nth-child(3){
+       display: flex;
+       align-items: center;
+       column-gap: 12px;
+       width: 305px;
+       @include text($familyGilroy,normal,500,20px,24px,$color00);
+     }
+     th:nth-child(4){
+       display: flex;
+       align-items: center;
+       width: 102px;
+       @include text($familyGilroy,normal,500,20px,24px,$color00);
+     }
+     th:nth-child(4){
+       display: flex;
+       align-items: center;
+       padding: 56px 66px 56px 0px;
+       @include text($familyGilroy,normal,500,20px,24px,$color00);
+     }
+   }
+    &-productBlock{
+      display: flex;
+      column-gap: 30px;
+      align-items: center;
+    }
+    &-icon{
+      img{
+        padding: 12px 16px;
+      }
+    }
+    &-text{
+      @include text($familyGilroy,normal,400,16px,19px,$color00);
+    }
+    &-amountMinus{
+      @include text($familyGilroy,normal,400,29px,39px,#C9C9C9);
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      background: white;
+      &:hover{
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+      }
+    }
+    &-amount{
+      width: 69px;
+      height: 30px;
+      text-align: center;
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid #8a8a8a;
+      @include text($familyGilroy,normal,400,16px,19px,$color00);
+    }
+    &-amountPlus{
+      @include text($familyGilroy,normal,400,29px,39px,#8AC44B);
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      background: white;
+      &:hover{
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
+      }
+    }
+    &-btn{
+      cursor: pointer;
+      background: white;
+    }
+  }
+}

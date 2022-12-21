@@ -1,0 +1,119 @@
+.category{
+  width: 100vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .container{
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+  &__title{
+    @include text($familyGCMC,normal,400,32px,32px,#443E3E);
+  }
+  &__block{
+    display: flex;
+    column-gap: 20px;
+    &-btn{
+      background: rgba(0, 0, 0, 0.24);
+      border-radius: 5px;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+    }
+  }
+  &__first{
+    width: 395px;
+    height: 390px;
+    background: url("../img/imgIndex/category/ProteinsBar.png");
+    display: flex;
+    justify-content: space-between;
+    h3{
+      margin: 40px auto auto 40px;
+      @include text($familyGilroy,normal,600,36px,43px,$color01);
+    }
+    button{
+      margin: 15px 15px auto auto;
+    }
+  }
+  &__box{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 805px;
+    div:first-child{
+      width: 495px;
+      height: 185px;
+      background: url("../img/imgIndex/category/ProteinsSnack.png");
+      display: flex;
+      justify-content: space-between;
+      h3{
+        margin: 40px auto auto 40px;
+        @include text($familyGilroy,normal,500,24px,28px,#282828);
+      }
+      button{
+        margin: 15px 15px auto auto;
+      }
+    }
+    div:last-child{
+      width: 495px;
+      height: 185px;
+      background: url("../img/imgIndex/category/CoconutMilk.png");
+      display: flex;
+      justify-content: space-between;
+    }
+    h3{
+      margin: 40px auto auto 40px;
+      @include text($familyGilroy,normal,500,24px,28px,#282828);
+    }
+    button{
+      margin: 15px 15px auto auto;
+    }
+    div{
+      border-radius: 5px;
+    }
+  }
+  &__fourth,&__third{
+    width: 289px;
+    height: 185px;
+    display: flex;
+    justify-content: space-between;
+    h3{
+      @include text($familyGilroy,normal,500,24px,28px,#282828);
+    }
+  }
+  &__fourth{
+    position: relative;
+    background-image: url("../img/imgIndex/category/Multivitamins.png");
+    h3{
+      margin: 132px auto auto 120px;
+      @include text($familyGilroy,normal,500,24px,28px,#282828);
+    }
+    button{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      margin: 15px 15px auto auto;
+
+    }
+  }
+   &__third{
+    position: relative;
+    background-image: url("../img/imgIndex/category/MensMultivitamins.png");
+    h3{
+      margin: 104px auto auto 117px;
+            @include text($familyGilroy,normal,500,24px,28px,#282828);
+    }
+    button{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      margin: 15px 15px auto auto;
+    }
+  }
+}
+
+
+

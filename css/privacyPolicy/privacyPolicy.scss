@@ -1,0 +1,32 @@
+.privacyPolicy{
+  width: 100vw;
+  margin-top: 101px;
+  margin-bottom: 100px;
+  .container{
+    max-width: 1215px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  &__title{
+    @include text($familyGCMC,normal,400,32px,32px,#443E3E);
+  }
+  &__allText{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  &__textBlock{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &__subtitle{
+    @include text($familyGilroy,normal,500,16px,19px,#000000);
+  }
+  &__text{
+    @include text($familyGilroy,normal,400,16px,19px,#999999);
+  }
+
+}

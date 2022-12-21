@@ -1,0 +1,38 @@
+.navigation{
+  width: 100vw;
+  padding-top: 19px;
+  background: #F5F5F5;
+  &__text{
+    @include text($familyGilroy,normal,400,14px,16px,#282828);
+  }
+  .container{
+    max-width: 1220px;
+    margin: auto;
+    display: flex;
+    column-gap: 99px;
+    align-items: center;
+    .navigation__page-select:first-child{
+      display: flex;
+      column-gap: 12px;
+      width: 136px;
+      height: 39px;
+      background: #0B7A6A;
+      border-radius: 5px 5px 0px 0px;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      h2{
+        @include text($familyGilroy,normal,500,16px,19px,$color01);
+      }
+    }
+  }
+  &__block{
+    display: flex;
+    column-gap: 150px;
+    align-items: center;
+  }
+  &__page{
+    display: flex;
+    column-gap: 5px;
+  }
+}
